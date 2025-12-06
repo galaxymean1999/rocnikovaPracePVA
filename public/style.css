@@ -58,11 +58,28 @@ main {
 main.login-main {
     background-color: transparent;
     place-items: center;
+    margin: 0;
+    padding: 0;
+}
+div.login-container {
+    background-color: transparent;
+    place-items: center;
     width: 25em;
-    background-color: #555555;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6em;
+    margin-top: 5em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    border-radius: .5em;
+}
+div.login-square{
+    background-color: #444444;
+    place-items: center;
+    display: grid;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
     padding-top: 2em;
     padding-bottom: 3em;
     border-radius: .5em;
@@ -120,7 +137,12 @@ input.email-text, input.password-text {
     background-color: #777777;
 }
 .login-heading {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    background-color: #444444;
+    border-radius: 0.5rem;
+    width: 25rem;
+    text-align: center;
 }
 
 .back-to-home {
@@ -130,5 +152,5 @@ input.email-text, input.password-text {
     box-shadow: none;
 }
 .shadow {
-    box-shadow: black 0.2em 0.2em 0.5em;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
 }
