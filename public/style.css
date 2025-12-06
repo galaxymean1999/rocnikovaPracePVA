@@ -120,4 +120,6 @@ input.email-text, input.password-text {
 .back-to-home {
     float: left;
     margin: 0;
+    background-color: transparent;
+    box-shadow: none;
 }
