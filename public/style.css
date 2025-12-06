@@ -5,8 +5,13 @@
 }
 header {
     background-color: #444444;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1em 1em;
     place-items: center;
+    z-index: 1000;
 }
 head, body, html {
     padding: 0;
@@ -21,6 +26,10 @@ nav menu {
     padding: 1em 2em;
     list-style-type: none;
     width: 15em;
+}
+nav {
+    position: sticky;
+    top: 0;
 }
 menu li {
     margin: 0.5em;
@@ -37,7 +46,6 @@ menu a {
     color: white;
     box-sizing: border-box;
     display: block;
-    box-shadow: black 0.2em 0.2em 0.5em;
 }
 menu a:hover {
     font-weight: bold;
@@ -45,19 +53,18 @@ menu a:hover {
 }
 main {
     margin-left: 15em;
-    background-color: red;
+    padding: 2em;
 }
 main.login-main {
     background-color: transparent;
     place-items: center;
     width: 25em;
-    background-color: #666666;
+    background-color: #555555;
     margin-left: auto;
     margin-right: auto;
     margin-top: 6em;
     padding-top: 2em;
     padding-bottom: 3em;
-    box-shadow: black 0.2em 0.2em 0.5em;
     border-radius: .5em;
 }
 div.login {
@@ -71,7 +78,8 @@ footer {
     background-color: #444444;
     text-align: center;
     padding: 1.5em;
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
     bottom: 0;
     width: 100%;
 }
@@ -90,7 +98,6 @@ input.email-text, input.password-text {
     padding: 0.5em;
     border-radius: 0.5em;
     border: 2px solid #222222;
-    box-shadow: black 0.2em 0.2em 0.5em;
     background-color: #555555;
     color: white;
 }
@@ -106,7 +113,6 @@ input.email-text, input.password-text {
     color: white;
     box-sizing: border-box;
     display: block;
-    box-shadow: black 0.2em 0.2em 0.5em;
     background-color: #333333;
 }
 .button:hover {
@@ -122,4 +128,7 @@ input.email-text, input.password-text {
     margin: 0;
     background-color: transparent;
     box-shadow: none;
+}
+.shadow {
+    box-shadow: black 0.2em 0.2em 0.5em;
 }
