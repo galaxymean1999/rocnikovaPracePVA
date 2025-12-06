@@ -2,6 +2,8 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+
+    font-family: sans-serif;
 }
 header {
     background-color: #444444;
@@ -46,10 +48,6 @@ menu a {
     color: white;
     box-sizing: border-box;
     display: block;
-}
-menu a:hover {
-    font-weight: bold;
-    background-color: #777777;
 }
 main {
     margin-left: 15em;
@@ -119,6 +117,10 @@ input.email-text, input.password-text {
     color: white;
 }
 
+h2 {
+    margin-top: 1rem;
+}
+
 .button {
     font-weight: normal;
     text-decoration: none;
@@ -133,7 +135,6 @@ input.email-text, input.password-text {
     background-color: #333333;
 }
 .button:hover {
-    font-weight: bold;
     background-color: #777777;
 }
 .login-heading {
