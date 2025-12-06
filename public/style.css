@@ -1,3 +1,13 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #444444;
+    padding: 1em 1em;
+    place-items: center;
+}
 head, body, html {
     padding: 0;
     margin: 0;
@@ -10,29 +20,104 @@ nav menu {
     color: white;
     padding: 1em 2em;
     list-style-type: none;
-    width: 20em;
+    width: 15em;
 }
 menu li {
-    margin: 0.75em;
-    width: 75%;
+    margin: 0.5em;
     box-sizing: border-box;
 }
 menu a {
     font-weight: normal;
     text-decoration: none;
-    margin: 2em 2em;
+    margin: 2em 0.2em;
     padding: 0.2em 0.5em;
-    border: 2px solid black;
+    border: 2px solid #222222;
     border-radius: 0.5em;
     text-align: center;
     color: white;
     box-sizing: border-box;
+    display: block;
+    box-shadow: black 0.2em 0.2em 0.5em;
+}
+menu a:hover {
+    font-weight: bold;
+    background-color: #777777;
 }
 main {
-    margin-left: 20em;
+    margin-left: 15em;
     background-color: red;
+}
+main.login-main {
+    background-color: transparent;
+    place-items: center;
+    width: 25em;
+    background-color: #666666;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    box-shadow: black 0.2em 0.2em 0.5em;
+    border-radius: .5em;
+}
+div.login {
+    background-color: transparent;
+    margin-left: 0;
+    display: grid;
+    place-items: center;
 }
 footer {
     clear: both;
-    background-color: blue;
+    background-color: #444444;
+    text-align: center;
+    padding: 1.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+div.login-info {
+    float: right;
+}
+
+div.back-to-home {
+    float: left;
+    margin-left: 1em;
+}
+
+input.email-text, input.password-text {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #222222;
+    box-shadow: black 0.2em 0.2em 0.5em;
+    background-color: #555555;
+    color: white;
+}
+
+.button {
+    font-weight: normal;
+    text-decoration: none;
+    margin: 2em 0.2em;
+    padding: 0.2em 0.5em;
+    border: 2px solid #222222;
+    border-radius: 0.5em;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    box-shadow: black 0.2em 0.2em 0.5em;
+    background-color: #333333;
+}
+.button:hover {
+    font-weight: bold;
+    background-color: #777777;
+}
+.login-heading {
+    margin-bottom: 1em;
+}
+
+.back-to-home {
+    float: left;
+    margin: 0;
 }
