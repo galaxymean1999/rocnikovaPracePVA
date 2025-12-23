@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 
@@ -95,7 +95,9 @@ footer {
     padding: 1.5em;
     position: absolute;
     z-index: 1000;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -103,9 +105,11 @@ div.login-info {
     float: right;
 }
 
-div.back-to-home {
+.back-to-home {
     float: left;
     margin-left: 1em;
+    color: red;
+    background-color: orange;
 }
 
 input.email-text, input.password-text {
@@ -124,7 +128,6 @@ h2 {
 .button {
     font-weight: normal;
     text-decoration: none;
-    margin: 2em 0.2em;
     padding: 0.2em 0.5em;
     border: 2px solid #222222;
     border-radius: 0.5em;
@@ -154,4 +157,41 @@ h2 {
 }
 .shadow {
     box-shadow: black 0.2rem 0.2rem 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 1em;
+    }
+    div.login-info {
+        float: none;
+        text-align: right;
+        float: right;
+        padding-bottom: 1rem;
+
+    }
+    nav menu {
+        float: none;
+        width: 100%;
+        padding: 0.5em;
+    }
+    nav {
+        position: relative;
+    }
+    main {
+        margin-left: 0;
+        padding: 1em;
+        padding-bottom: 5em;
+    }
+    div.login-square, .login-heading, div.login-container {
+        width: 90%;
+        margin-top: 2em;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    menu li {
+        margin: 0;
+    }
 }
