@@ -25,6 +25,10 @@ nav {
     top: 0;
     display: flex;
     flex-direction: row;
+    background-color: #15151F;
+    padding: 0.5em 1em 0 0.5em;
+    z-index: 999;
+    border-bottom: 1px solid #303037;
 }
 nav span {
     margin: 1em 1em 0 1em;
@@ -39,13 +43,9 @@ nav span a {
     color: white;
     padding: 0.5em;
 }
-.nav-bar {
-    background-color: #15151F;
-    padding: 0.5em 1em;
-    z-index: 999;
-}
 .selected-nav {
     border-bottom: red 2px solid;
+    font-weight: bold;
 }
 nav span.selected-nav:hover {
     border-bottom: red 2px solid;
