@@ -30,6 +30,17 @@ nav {
     z-index: 999;
     border-bottom: 1px solid #303037;
 }
+nav span.login-info {
+    float: right;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    margin-top: 0.5em;
+}
+nav span.login-info:hover {
+    border: none;
+}
 nav span {
     margin: 1em 1em 0 1em;
     padding-bottom: 1em;
@@ -132,10 +143,6 @@ footer {
     width: 100%;
 }
 
-div.login-info {
-    float: right;
-}
-
 .back-to-home {
     float: left;
     margin-left: 1em;
@@ -167,6 +174,10 @@ h2 {
     header {
         text-align: center;
         padding: 1em;
+        display: none;
+    }
+    header.login-header {
+        display: block;
     }
     main {
         margin-left: 0;
@@ -177,7 +188,32 @@ h2 {
         width: 80%;
         margin-top: 2em;
     }
+    div.login-container {
+        width: 90%;
+    }
     h1 {
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    nav span {
         font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    nav span.login-info {
+        float: none;
+        text-align: center;
+        margin: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .login-button {
+        padding: 0.6em 1.2em;
+        width: 60%;
     }
 }
