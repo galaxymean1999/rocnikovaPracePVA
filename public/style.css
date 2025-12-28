@@ -229,16 +229,6 @@ dl dd {
     margin-top: 0.5rem;
 }
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-img.cs-image {
-    border-radius: 1rem;
-    float: right;
-    width: 40%;
-}
-img.wrtcar-image, img.ferraricar-image {
     border-radius: 1rem;
     display: block;
     margin-left: auto;
@@ -248,10 +238,23 @@ img.wrtcar-image, img.ferraricar-image {
     aspect-ratio: 5 / 3;
     object-fit: cover;
 }
+img.cs-image {
+    aspect-ratio: 5 / 2;
+}
 
 /**/
 /* Responsive Design */
 /**/
+@media (max-width: 1024px) {
+    section.left-section, section.right-section {
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
 @media (max-width: 768px) {
     header {
         text-align: center;
@@ -308,12 +311,15 @@ img.wrtcar-image, img.ferraricar-image {
         width: 100%;
         padding: 0.3rem;
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.4rem;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0.4rem;
         margin-bottom: 1rem;
         float: none;
+    }
+    section.last {
+        margin-bottom: 0.1rem;
     }
     dl dt {
         font-size: 1rem;
@@ -323,16 +329,10 @@ img.wrtcar-image, img.ferraricar-image {
         margin-left: 0.5rem;
     }
     img {
-        width: 80%;
+        width: 99%;
         float: none;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .cs-image {
-        width: 80%;
-        margin-top: 0;
     }
 }
