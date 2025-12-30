@@ -7,6 +7,7 @@ header {
     width: 100%;
     padding: 1em 1em;
     place-items: center;
+    text-align: center;
     z-index: 1000;
 }
 head, body, html {
