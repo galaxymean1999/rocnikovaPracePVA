@@ -370,4 +370,14 @@ img.cs-image {
         margin-bottom: 0rem;
         display: block;
     }
+    ul.skills-list {
+        padding-left: 1rem;
+        margin-left: 0rem;
+    }
+    ul.skills-list li {
+        margin-bottom: 1rem;
+    }
+    ul.skills-list li:last-child {
+        margin-bottom: 0rem;
+    }
 }
