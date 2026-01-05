@@ -146,7 +146,7 @@ footer {
     z-index: 1000;
     width: 100%;
 }
-footer.main {
+footer.fixed {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -162,7 +162,9 @@ ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 2;
-
+}
+ul.skills-list {
+    padding-left: 2rem;
 }
 .button {
     font-weight: normal;
@@ -276,6 +278,14 @@ img.cs-image {
         margin-left: 0;
         padding: 1em;
         padding-bottom: 5em;
+    }
+    footer.fixed {
+        position: relative;
+        width: 100%;
+    }
+    footer.fixed.fixed-phone {
+        position: absolute;
+        bottom: 0;
     }
     div.login-square, .login-heading, div.login-container {
         width: 80%;
