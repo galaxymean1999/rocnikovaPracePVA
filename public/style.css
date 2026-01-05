@@ -62,6 +62,10 @@ nav span a {
 nav span.selected-nav:hover {
     border-bottom: red 2px solid;
 }
+.hamburger-check {
+    display: none;
+    cursor: pointer;
+}
 
 /**/
 /* Login Page */
@@ -147,7 +151,6 @@ footer.main {
     bottom: 0;
     left: 0;
 }
-
 .back-to-home {
     float: left;
     margin-left: 1em;
@@ -258,10 +261,13 @@ img.cs-image {
     }
 }
 @media (max-width: 768px) {
-    header {
+    header h1 {
         text-align: center;
         padding: 1em;
         display: none;
+    }
+    header {
+        height: 5rem;
     }
     header.login-header {
         display: block;
@@ -292,6 +298,7 @@ img.cs-image {
         flex-direction: column;
         align-items: center;
         position: relative;
+        display: none;
     }
     nav span {
         font-size: 1.2rem;
@@ -304,6 +311,22 @@ img.cs-image {
         margin: 1em;
         padding-left: 1em;
         padding-right: 1em;
+    }
+    label.hamburger-check {
+        display: block;
+        float: right;
+        font-size: 2rem;
+        padding-top: 0rem;
+        margin-top: 0;
+    }
+    input.hamburger-check:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 5rem;
+        z-index: 999;
+        width: 100%;
     }
     .login-button {
         padding: 0.6em 1.2em;
