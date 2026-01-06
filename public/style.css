@@ -89,7 +89,7 @@ div.login-container {
     padding-bottom: 3em;
     border-radius: .5em;
 }
-div.login-square{
+div.login-square {
     background-color: #101019;
     place-items: center;
     display: grid;
