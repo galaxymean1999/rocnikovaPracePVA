@@ -71,7 +71,6 @@ nav span.selected-nav:hover {
 /**/
 /* Login Page */
 /**/
-
 main.login-main {
     background-color: transparent;
     place-items: center;
@@ -156,7 +155,6 @@ footer.fixed {
     float: left;
     margin-left: 1em;
 }
-
 ul {
     list-style-type: none;
     margin-left: 2rem;
@@ -166,6 +164,7 @@ ul {
 }
 ul.skills-list {
     padding-left: 2rem;
+    border-left: 1px solid #303037;
 }
 .button {
     font-weight: normal;
@@ -179,9 +178,18 @@ ul.skills-list {
 .button:hover {
     background-color: #222222;
 }
-
 .shadow {
     box-shadow: black 0.1rem 0.1rem 0.5rem;
+}
+div.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+div.hobby-list section {
+    width: 20%;
 }
 
 /**/
@@ -221,6 +229,7 @@ section p {
     text-align: center;
     line-height: 1.6;
 }
+
 dl {
     border-left: 1px solid #303037;
     padding-left: 1rem;
@@ -286,6 +295,7 @@ img.cs-image {
         position: absolute;
         bottom: 0;
     }
+    
     div.login-square, .login-heading, div.login-container {
         width: 80%;
         margin-top: 2em;
@@ -378,5 +388,13 @@ img.cs-image {
     }
     ul.skills-list li:last-child {
         margin-bottom: 0rem;
+    }
+    div.hobby-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.4rem;
+    }
+    div.hobby-list section {
+        width: 100%;
     }
 }
