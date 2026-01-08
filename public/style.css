@@ -17,6 +17,10 @@ head, body, html {
 }
 main {
     padding: 1rem;
+    padding-bottom: 4rem;
+}
+main.hobby {
+    margin-bottom: 9rem;
 }
 
 /**/
@@ -145,8 +149,7 @@ footer {
     padding: 1.5em;
     z-index: 1000;
     width: 100%;
-}
-footer.fixed {
+    height: 4rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -287,15 +290,18 @@ img.cs-image {
         padding: 1em;
         padding-bottom: 5em;
     }
-    footer.fixed {
+    main.hobby {
+        margin-bottom: 0;
+    }
+    footer {
         position: relative;
         width: 100%;
     }
-    footer.fixed.fixed-phone {
-        position: absolute;
+    footer.fixed-on-phone {
+        position: fixed;
+        width: 100%;
         bottom: 0;
     }
-    
     div.login-square, .login-heading, div.login-container {
         width: 80%;
         margin-top: 2em;
