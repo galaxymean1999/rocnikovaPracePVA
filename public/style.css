@@ -184,6 +184,18 @@ ul.skills-list {
     box-shadow: black 0.1rem 0.1rem 0.5rem;
 }
 
+div.hobby-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+div.hobby-list section {
+    width: 20%;
+}
+
 /**/
 /* Sections on a Page */
 /**/
@@ -293,6 +305,13 @@ img.cs-image {
     }
     div.login-container {
         width: 90%;
+    }
+    div.hobby-list {
+        flex-direction: column;
+        gap: 0;
+    }
+    div.hobby-list section {
+        width: 100%;
     }
     h1 {
         font-size: 1.5rem;
