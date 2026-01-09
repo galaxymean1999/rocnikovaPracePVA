@@ -168,6 +168,7 @@ ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 2;
+    border-left: 1px solid #303037;
 }
 ul.skills-list {
     padding-left: 2rem;
